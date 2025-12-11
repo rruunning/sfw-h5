@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>科幻世界 · 想象力是人类进步的阶梯</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <img src="assets/logo/khsh-logo-white.png" alt="科幻世界 logo" class="hero-logo" />
+      <div class="hero-text">
+        <h1>科幻世界阅读与投稿导航</h1>
+        <p>想象力是人类进步的阶梯</p>
+        <button id="scroll-down-btn" class="hero-btn">向下探索</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 书架区 -->
+    <section id="works-section">
+      <h2>推荐阅读 · 科幻世界出品</h2>
+      <p class="section-sub">横向滑动书架，挑选你感兴趣的封面。鼠标悬停可查看书名与标签。</p>
+      <div class="bookshelf-viewport">
+        <div id="works-track" class="works-track"></div>
+      </div>
+    </section>
+
+    <!-- 投稿指南 -->
+    <section id="guide-section">
+      <h2>投稿指南</h2>
+      <p class="section-sub">以下信息依据《科幻世界》杂志及官方渠道整理，仅供参考，实际要求以当期公告为准。</p>
+      <div id="guide-cards" class="cards"></div>
+    </section>
+
+    <!-- AIGC 警示（独立红框卡片） -->
+    <section>
+      <div class="card aigc-warning">
+        <h3>AIGC 投稿特别说明</h3>
+        <p>本刊不接受未经明确说明的人工智能生成内容（AIGC）投稿。一旦发现未注明的 AIGC 稿件，该作者作品将被永久退稿，作品不再采用。</p>
+      </div>
+    </section>
+
+    <!-- 测试问卷 -->
+    <section id="quiz-section">
+      <h2>你的科幻阅读偏好测试</h2>
+      <p class="section-sub">一次一题，完成后将根据你的选择推荐更适合的书单。</p>
+      <div id="quiz-container" class="quiz-container">
+        <div id="quiz-question-block" class="quiz-question-block"></div>
+        <div class="quiz-controls">
+          <button id="quiz-prev" class="quiz-btn secondary">上一题</button>
+          <button id="quiz-next" class="quiz-btn primary">下一题</button>
+          <button id="quiz-reset" class="quiz-btn ghost">重新测试</button>
+        </div>
+        <div id="quiz-progress" class="quiz-progress"></div>
+        <div id="quiz-result" class="quiz-result"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>本页面为课程 / 活动练习用 H5 页面，并非科幻世界官方网页。投稿请以《科幻世界》杂志及其官方账号发布的信息为准。</p>
+    </footer>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
